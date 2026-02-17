@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Superior Water Systems/Lee’s Water Systems</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .intro-text {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #666;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box; /* Ensures padding doesn't widen the box */
+      }
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+      /* SMS Compliance Section Styling */
+      .sms-disclosure {
+        background-color: #f0f4f8;
+        padding: 15px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        margin-bottom: 20px;
+        border-left: 4px solid #007bff;
+      }
+      .sms-disclosure p {
+        margin: 0 0 10px 0;
+      }
+      .sms-disclosure ul {
+        margin: 0 0 10px 20px;
+        padding: 0;
+      }
+      .checkbox-container {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+      }
+      .checkbox-container input {
+        margin-right: 10px;
+        margin-top: 5px;
+        transform: scale(1.2);
+      }
+      .checkbox-container label {
+        font-weight: normal;
+        margin: 0;
+        cursor: pointer;
+      }
+      .submit-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .submit-btn:hover {
+        background-color: #0056b3;
+      }
+      .footer-links {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.85em;
+      }
+      .footer-links a {
+        color: #007bff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="intro-text">
+        Please complete the form below to request service, schedule an
+        appointment, or contact customer support.
+      </p>
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="John Doe"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="john@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="(555) 123-4567"
+          />
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="message">How can we help you?</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="I need to schedule a service..."
+          ></textarea>
+        </div> -->
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0" />
+
+        <div class="sms-disclosure">
+          <p><strong>SMS Opt-In Consent</strong></p>
+          <p>
+            By providing your mobile number and checking the box below, you
+            agree to receive SMS text messages from Superior Water Systems/Lee’s
+            Water Systems related to:
+          </p>
+          <ul>
+            <li>Service confirmations</li>
+            <li>Appointment reminders</li>
+            <li>Service updates</li>
+            <li>Responses to customer inquiries</li>
+            <li>Promotional offers and company updates</li>
+          </ul>
+          <p>
+            Messaging frequency may vary. Message and data rates may apply. You
+            may opt out at any time by replying STOP. For assistance, reply HELP
+            or contact us at +1 (571) 564-2547.
+          </p>
+
+          <p>
+            View our 12
+            <a href="privacy.html" target="_blank">Privacy Policy</a> and
+            <a href="privacy.html" target="_blank">Terms of Service</a>.
+          </p>
+
+          <div class="checkbox-container">
+            <input
+              type="checkbox"
+              id="sms-consent"
+              name="sms_consent"
+              required
+            />
+            <label for="sms-consent"
+              >I agree to receive SMS messages from Superior Water Systems/Lee’s
+              Water Systems.</label
+            >
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </div>
+
+    <div class="footer-links">
+      <p>Superior Water Systems/Lee’s Water Systems</p>
+    </div>
+  </body>
+</html>
